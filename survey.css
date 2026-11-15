@@ -219,3 +219,30 @@ input[type="radio"] {
     height: 18px;
     accent-color: #002147;
 }
+
+/* Next button */
+.btn-next {
+    display: block;
+    margin: 10px 0 0 auto;
+    background: #002147;
+    color: #FFFFFF;
+    font-size: 1.05rem;
+    font-weight: bold;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 6px;
+    border-bottom: 3px solid #D4AF37;
+    cursor: pointer;
+}
+
+.btn-next:hover {
+    background: #0A3566;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.85rem;
+    color: #5A6672;
+}
