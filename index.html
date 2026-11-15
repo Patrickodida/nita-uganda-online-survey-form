@@ -21,11 +21,104 @@
         <li><span class="num">3</span>Step 3 — Submit</li>
     </ol>
     <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Respondent Details</legend>
 
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <select name="title" id="title">
+                        <option value="">-- Select Title --</option>
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="ms">Ms</option>
+                        <option value="dr">Dr</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullname" class="required">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required maxlength="4">
+                    <small class="hint">Atleast 4 charcaters.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="required">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" id="phone"
+                    pattern="\+256[0-9]{9}"
+                    placeholder="+256700123456"
+                    title="Use the format +256 followed by 9 digits, e.g. +256700123456">
+                <small class="hint">Format: +256 followed by 9 digits.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+
+                <div class="form-group">
+                    <fieldset class="radio-group">
+                        <legend>Gender</legend>
+                        <div class="radio-options">
+                            <div>
+                                <input type="radio" id="gender-male" name="gender" value="male">
+                                <label for="gender-male">Male</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="gender-female" name="gender" value="female">
+                                <label for="gender-female">Female</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="gender-none" name="gender" value="prefer-not-to-say">
+                                <label for="gender-none">prefer-not-to-say</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <label for="region">Region</label>
+                    <select name="region" id="region">
+                        <option value="">-- Select region --</option>
+                        <option value="central">Central</option>
+                        <option value="eastern">Eastern</option>
+                        <option value="northern">Northern</option>
+                        <option value="western">Western</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <fieldset class="radio-group">
+                        <legend>Respondent Category</legend>
+                        <div class="radio-options">
+                            <div>
+                                <input type="radio" id="cat-ict" name="category" value="ict-professional">
+                                <label for="cat-ict">ICT Professional</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="cat-gov" name="category" value="government-officer">
+                                <label for="cat-gov">Government Officer</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="cat-student" name="category" value="student">
+                                <label for="cat-student">Student</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-next">Next</button>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </form>
     </main>
 
     <footer>
-
+        <p>&copy; 2026 National Information Technology Authority — Uganda</p>
     </footer>
 </body>
 </html>
